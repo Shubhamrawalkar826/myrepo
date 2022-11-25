@@ -86,7 +86,7 @@ const Customerregistration = () => {
         
         
 
-        CustomerregistrationAPI.custreg(user).then(() => {
+         axios.get('http://localhost:8080/api' + '/signup' + user).then(() => {
             setUserdetails({
                 ...userdetails,
                 //message: 'registration successful.',

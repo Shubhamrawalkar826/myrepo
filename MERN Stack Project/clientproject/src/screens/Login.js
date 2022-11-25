@@ -34,7 +34,7 @@ export default class Login extends Component {
             return false;
         }
 
-        axios.get('http://localhost:8080/api' + '/login?email=' + this.state.email + '&password=' + this.state.password);
+        axios.get('http://localhost:8080/api' + '/signin?email=' + this.state.email + '&password=' + this.state.password)
             .then(response => {
 
                 console.log(response.data);
